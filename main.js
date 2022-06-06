@@ -56,5 +56,12 @@ datos.innerHTML = `
 if(altura >= 190){
     datos.innerHTML += '<h2>Eres una persona ALTA</h2>';
 }else{
-    datos.innerHTML += '<h2>Eres una persona BAJITA</h2>'
+    datos.innerHTML += '<h2>Eres una persona BAJITA</h2>';
+}
+
+/* Bucles */
+
+for (var i = 2000; i<=2022; i++){
+    // bloque de instrucciones
+    datos.innerHTML += "<h4>Estamos en el año: "+i;
 }
