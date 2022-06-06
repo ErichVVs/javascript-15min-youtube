@@ -36,15 +36,25 @@ datos.innerHTML = concatenacion;
 
 /*Datos por Templets String*/
 
-var nombre = "Erich Vivas";
-var altura = 172;
+var nombre = "Adán Erich";
+var apellido = "Vivas Sánchez";
+var altura = 192;
 
-var concatenacion = nombre + " " + altura;
+var concatenacion = nombre + apellido + " " + altura;
 
 var datos = document.getElementById ("datos");
 
 datos.innerHTML = `
     <h1>Soy la caja de datos</h1>
     <h2>Mi nombre es: ${nombre}</h2>
+    <h2>Mi apellido es: ${apellido}</h2>
     <h3>Mi altura es: ${altura} cm</h3>
 `;
+
+/* Condicionales */
+
+if(altura >= 190){
+    datos.innerHTML += '<h2>Eres una persona ALTA</h2>';
+}else{
+    datos.innerHTML += '<h2>Eres una persona BAJITA</h2>'
+}
