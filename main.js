@@ -34,7 +34,7 @@ var datos = document.getElementById ("datos");
 datos.innerHTML = concatenacion;
 
 
-/*Datos por Templets String*/
+/*Datos por Templets String
 
 var nombre = "Adán Erich";
 var apellido = "Vivas Sánchez";
@@ -51,7 +51,7 @@ datos.innerHTML = `
     <h3>Mi altura es: ${altura} cm</h3>
 `;
 
-/* Condicionales */
+/* Condicionales
 
 if(altura >= 190){
     datos.innerHTML += '<h2>Eres una persona ALTA</h2>';
@@ -59,9 +59,23 @@ if(altura >= 190){
     datos.innerHTML += '<h2>Eres una persona BAJITA</h2>';
 }
 
-/* Bucles */
+/* Bucles 
 
-for (var i = 2000; i<=2022; i++){
+for (var i = 2020; i<=2022; i++){
     // bloque de instrucciones
     datos.innerHTML += "<h4>Estamos en el año: "+i;
+} */
+
+/* funciones */
+
+function MuestraMiNombre (nombre, apellido, altura) {
+    var datos = document.getElementById ("datos");
+    datos.innerHTML = `
+        <h1>Soy la caja de datos</h1>
+        <h2>Mi nombre es: ${nombre}</h2>
+        <h2>Mi apellido es: ${apellido}</h2>
+        <h3>Mi altura es: ${altura} cm</h3>
+    `;
 }
+
+MuestraMiNombre ("Adán Erich", "Vivas Sánchez", 172);
