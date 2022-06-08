@@ -87,6 +87,13 @@ alert (animo[1]); */
 
 var animo = ['Ansiedad', 'Amsiedad', 'Anxiety'];
 
+document.write('<h1>Listado de animos</h1>');
+
+/*
 for (i = 0; i < animo.length; i++){
     document.write(animo[i] + '<br/>');
-}
+} */
+
+animo.forEach((animo) => {
+    document.write (animo + '<br/>')
+});
