@@ -97,3 +97,10 @@ for (i = 0; i < animo.length; i++){
 animo.forEach((animo) => {
     document.write (animo + '<br/>')
 });
+
+
+
+let telefono = '(406) 459-0000';
+
+alert(telefono);
+
