@@ -79,3 +79,6 @@ function MuestraMiNombre (nombre, apellido, altura) {
 }
 
 MuestraMiNombre ("Adán Erich", "Vivas Sánchez", 172);
+
+var animo = ['Ansiedad', 'Amsiedad', 'Anxiety'];
+alert (animo[1]);
