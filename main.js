@@ -80,5 +80,13 @@ function MuestraMiNombre (nombre, apellido, altura) {
 
 MuestraMiNombre ("Adán Erich", "Vivas Sánchez", 172);
 
+/* Variables con variables multiples 
+
 var animo = ['Ansiedad', 'Amsiedad', 'Anxiety'];
-alert (animo[1]);
+alert (animo[1]); */
+
+var animo = ['Ansiedad', 'Amsiedad', 'Anxiety'];
+
+for (i = 0; i < animo.length; i++){
+    document.write(animo[i] + '<br/>');
+}
