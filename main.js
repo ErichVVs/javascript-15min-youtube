@@ -85,7 +85,7 @@ MuestraMiNombre ("Adán Erich", "Vivas Sánchez", 172);
 var animo = ['Ansiedad', 'Amsiedad', 'Anxiety'];
 alert (animo[1]); */
 
-var animo = ['Ansiedad', 'Amsiedad', 'Anxiety'];
+var animo = ['Amsiedad', 'Amsiedad', 'Amxiety'];
 
 document.write('<h1>Listado de animos</h1>');
 
@@ -103,4 +103,14 @@ animo.forEach((animo) => {
 let telefono = '(406) 459-0000';
 
 alert(telefono);
+
+
+
+let lista = [1,2,3,4,5,6];
+
+for (elemento of lista) {
+    let suma = sumar (elemento,5);
+    document.write (suma + '<br/>')
+}
+
 
